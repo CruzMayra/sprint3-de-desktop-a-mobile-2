@@ -45,3 +45,15 @@
   background: #E486EA;
   grid-area: F;
 }
+
+@media all and (max-width:768px) {
+  .container {
+    grid-template-rows: 8em 10em 8em 8em;
+    grid-template-areas:
+    "A A A A A A A A A A A A"
+    "B B B B B B B B B B B B"
+    "C C C C D D D D E E E E"
+    "F F F F F F F F F F F F";
+    margin: 0 auto;
+    width: 100%;
+}
