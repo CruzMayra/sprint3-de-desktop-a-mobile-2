@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 13em 13em 13em;
+  grid-template-columns: repeat(12,8.3%);
+  grid-template-areas:
+  "A A A A A A A A A A A A"
+  "B B B B B B B B B F F F"
+  "C C C D D D E E E F F F";
+  margin: 0 auto;
+  width: 100%;
+}
+
+.itemA {
+  background: #F7EA00;
+  grid-area: A;
+}
+
+.itemB {
+  background: #34EAA9;
+  grid-area: B;
+}
+
+.itemC {
+  background: #36B6E8;
+  grid-area: C;
+}
+
+.itemD {
+  background: #E836B1;
+  grid-area: D;
+}
+
+.itemE {
+  background: #F7B93C;
+  grid-area: E;
+}
+
+.itemF {
+  background: #E486EA;
+  grid-area: F;
+}
